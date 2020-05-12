@@ -43,7 +43,6 @@ namespace tests
             _host = hostBuilder.ConfigureWebHost(webHostBuilder =>
             {
                 webHostBuilder.UseKestrel();
-                webHostBuilder.UseUrls();
             }).Build();
             _host.Start();
             return _host;
